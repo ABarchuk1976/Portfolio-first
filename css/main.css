@@ -74,30 +74,6 @@ body {
   width: 100%;
 }
 
-.color1 {
-  width: 100px;
-  height: 100px;
-  background-color: #5221e6;
-}
-
-.color2 {
-  width: 100px;
-  height: 100px;
-  background-color: #e65221;
-}
-
-.color3 {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(230, 82, 33, 0.2);
-}
-
-.color4 {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(82, 33, 230, 0.2);
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
