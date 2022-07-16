@@ -1,0 +1,12 @@
+body {
+  font-family: $fontFamilyPrimary, $fontFamilyAlternative;
+  // background-color: var(--bg-page);
+  color: $colorText;
+  font-size: $fontSizeBodyPrimary;
+  line-height: var(--line-height-primary);
+}
+
+.body-fixed {
+  position: fixed;
+  width: 100%;
+}
