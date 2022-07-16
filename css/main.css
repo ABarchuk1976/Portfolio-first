@@ -1,1 +1,114 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap");
+@font-face {
+  font-family: 'Sen';
+  src: url("Sen-Bold.eot");
+  src: url("Sen-Bold.eot?#iefix") format("embedded-opentype"), url("Sen-Bold.woff2") format("woff2"), url("Sen-Bold.woff") format("woff"), url("Sen-Bold.ttf") format("truetype"), url("Sen-Bold.svg#Sen-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sen';
+  src: url("Sen-Regular.eot");
+  src: url("Sen-Regular.eot?#iefix") format("embedded-opentype"), url("Sen-Regular.woff2") format("woff2"), url("Sen-Regular.woff") format("woff"), url("Sen-Regular.ttf") format("truetype"), url("Sen-Regular.svg#Sen-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+body {
+  font-family: "Sen", "sans-serif";
+  color: #8491a0;
+  font-size: 1.125rem;
+  /* 1.125rem */
+  line-height: var(--line-height-primary);
+}
+
+.body-fixed {
+  position: fixed;
+  width: 100%;
+}
+
+.color1 {
+  width: 100px;
+  height: 100px;
+  background-color: #5221e6;
+}
+
+.color2 {
+  width: 100px;
+  height: 100px;
+  background-color: #e65221;
+}
+
+.color3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(230, 82, 33, 0.2);
+}
+
+.color4 {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(82, 33, 230, 0.2);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */
