@@ -1,12 +1,33 @@
 body {
   font-family: $fontFamilyPrimary, $fontFamilyAlternative;
   // background-color: var(--bg-page);
-  color: $colorText;
-  font-size: $fontSizeBodyPrimary;
+  color: $colorParagraph;
+  font-size: $fontSizeBodyPrimary; /* 1.125rem */
   line-height: var(--line-height-primary);
 }
 
 .body-fixed {
   position: fixed;
   width: 100%;
+}
+
+.color1 {
+  width: 100px;
+  height: 100px;
+  color: $colorAccentPrimary;
+}
+.color2 {
+  width: 100px;
+  height: 100px;
+  color: $colorAccentSecondary;
+}
+.color3 {
+  width: 100px;
+  height: 100px;
+  color: $bgcAccentPeach;
+}
+.color4 {
+  width: 100px;
+  height: 100px;
+  color: $bgcAccentViolet\;;
 }
