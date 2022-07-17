@@ -1,11 +1,25 @@
+.menu__icon-menu,
+.menu__icon-close {
+  display: block;
+  width: 18px;
+}
+
+.menu__icon-menu {
+  height: 11px;
+}
+
+.menu__icon-close {
+  height: 18px;
+}
+
 .menu__button {
   display: none;
   padding: $paddingBtnMenuMobile;
-  & .icon-menu {
+  & .menu__icon-menu {
     opacity: 1;
     transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
   }
-  & .icon-close {
+  & .menu__icon-close {
     opacity: 0;
     transform: rotate(0);
     transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
@@ -17,11 +31,11 @@
 }
 
 .menu__button.is--open {
-  & .icon-menu {
+  & .menu__icon-menu {
     opacity: 0;
     transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
   }
-  & .icon-close {
+  & .menu__icon-close {
     opacity: 1;
     transform: rotate(1turn);
     transition: opacity $transitionDurationPrimary $transitionTimingPrimary,
@@ -40,6 +54,7 @@
 }
 
 .menu__set {
+  font-size: 1rem;
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
@@ -59,7 +74,9 @@
 
 .menu__item {
   display: block;
-  border-bottom: 1px solid $colorBorderBottomMenuMobile;
+  @media screen and (max-width: 767px) {
+    border-bottom: 1px solid $colorBorderBottomMenuMobile;
+  }
 }
 
 .menu__link {

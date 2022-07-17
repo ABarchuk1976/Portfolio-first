@@ -1,6 +1,5 @@
 .logo {
-  display: flex;
-  align-items: center;
+  display: block;
   font-size: 24px;
   color: $colorHeading;
   background-color: transparent;
@@ -8,12 +7,18 @@
 }
 
 .logo__decoration {
+  position: relative;
   display: inline-block;
   height: 100%;
   font-weight: $fontWeightBold;
 }
 
 .logo__decoration::before {
+  position: absolute;
+  left: 41%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
   display: inline-block;
   vertical-align: middle;
   content: '';

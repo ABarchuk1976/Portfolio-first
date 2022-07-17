@@ -1,6 +1,22 @@
 .container {
   padding: $paddingContainer;
+  @include positioning-flex($jc: space-between);
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 359px) {
+    width: 100vw;
+  }
+
+  @media screen and (min-width: 360px) {
+    max-width: $widthContainer360;
+  }
+
   @media screen and (min-width: 768px) {
-    @include positioning-flex($jc: start);
+    max-width: $widthContainer768;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: $widthContainer1440;
   }
 }

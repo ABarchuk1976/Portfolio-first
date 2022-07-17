@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -18,10 +19,6 @@
   @media screen and (min-width: 1440px) {
     padding: $paddingHeaderDesctop;
   }
-}
-
-.container__header {
-  @include positioning-flex($jc: space-between);
 }
 
 .menu__backdrop {
