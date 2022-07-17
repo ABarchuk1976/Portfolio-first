@@ -24,22 +24,34 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a href="/" class="logo">
-          <svg>
-            <use></use>
+    <header class="header">
+      <div class="container container__header">
+        <a href="/" class="logo"> Andrii<span class="logo__decoration">Barchuk</span> </a>
+        <button class="menu__button">
+          <svg aria-label="Control button of menu-bar">
+            <use href="" class="menu__icon-menu"></use>
+            <use href="" class="menu__icon-close"></use>
           </svg>
-        </a>
+        </button>
 
-        <nav>
-          <ul class="navigation__menu">
-            <li class="navigation__item">Experience</li>
-            <li class="navigation__item">Skills</li>
-            <li class="navigation__item">Portfolio</li>
-            <li class="navigation__item navigation__item--accent">Contact</li>
-          </ul>
-        </nav>
+        <div class="menu__backdrop">
+          <nav role="navigation" class="menu">
+            <ul class="menu__set">
+              <li class="menu__item">
+                <a href="" class="menu__link">Experience</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Portfolio</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link menu__link--accent">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 

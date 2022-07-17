@@ -1,9 +1,14 @@
 body {
   font-family: $fontFamilyPrimary, $fontFamilyAlternative;
-  // background-color: var(--bg-page);
+  background-color: $bgcPage;
   color: $colorParagraph;
   font-size: $fontSizeBodyPrimary; /* 1.125rem */
   line-height: var(--line-height-primary);
+  padding-top: $heitghHeader360;
+
+  @media screen and (min-width: 768px) {
+    padding: $heitghHeader768Plus;
+  }
 }
 
 .body-fixed {

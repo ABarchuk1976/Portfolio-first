@@ -1,0 +1,93 @@
+.menu__button {
+  display: none;
+  padding: $paddingBtnMenuMobile;
+  & .icon-menu {
+    opacity: 1;
+    transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
+  }
+  & .icon-close {
+    opacity: 0;
+    transform: rotate(0);
+    transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
+  }
+
+  @media screen and (max-width: 767px) {
+    @include positioning-flex();
+  }
+}
+
+.menu__button.is--open {
+  & .icon-menu {
+    opacity: 0;
+    transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
+  }
+  & .icon-close {
+    opacity: 1;
+    transform: rotate(1turn);
+    transition: opacity $transitionDurationPrimary $transitionTimingPrimary,
+      transform $transitionDurationPrimary $transitionTimingPrimary $transitionDurationPrimary;
+  }
+}
+
+.menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.menu.is--open {
+  display: block;
+}
+
+.menu__set {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    transform: translateY(-100%);
+    margin: 0;
+    overflow-y: scroll;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include positioning-flex();
+  }
+}
+
+.menu__item {
+  display: block;
+  border-bottom: 1px solid $colorBorderBottomMenuMobile;
+}
+
+.menu__link {
+  width: 100%;
+  display: block;
+  color: inherit;
+  background-color: inherit;
+  padding: $paddingItemMenuMobile;
+  transition: color $transitionDurationPrimary $transitionTimingPrimary,
+    background-color $transitionDurationPrimary $transitionTimingPrimary;
+
+  &:hover,
+  &:focus {
+    color: $colorHeading;
+    background-color: $bgcAccentPrimary;
+  }
+}
+
+.menu__link--accent {
+  width: 100%;
+  font-weight: $fontWeightBold;
+  color: $colorHeading;
+  background-color: $colorAccentPrimary;
+  transition: background-color $transitionDurationPrimary $transitionTimingPrimary;
+
+  &:hover,
+  &:focus {
+    color: $colorHeading;
+    background-color: $bgcAccentPrimaryHover;
+  }
+}
