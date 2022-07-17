@@ -16,8 +16,8 @@ $bgcPage: #000000;
 $bgcAccentSecondary: rgba(230, 82, 33, 0.2);
 $bgcAccentPrimary: rgba(82, 33, 230, 0.2);
 $bgcAccentPrimaryHover: #2a0b85;
-$bgcBackdrop: rgba(0, 0, 0, 0.2);
 $bgcMenuMobile: rgba(0, 0, 0, 0);
+$bgcBackdrop: #181823;
 
 $fontFamilyPrimary: 'Sen';
 $fontFamilyAlternative: 'sans-serif';
@@ -37,8 +37,8 @@ $fontWeightBold: 700;
 
 $lineHeightPrimary: 1.6875rem;
 
-$paddingHeaderMobileLess: 1.5rem 0rem;
-$paddingHeaderMobile: 1.5rem 0.25rem;
+$paddingHeaderMobileLess: 0 0;
+$paddingHeaderMobile: 0 0.25rem;
 $paddingHeaderTablet: 0rem 1.5rem;
 $paddingHeaderDesctop: 0rem 3.5rem;
 

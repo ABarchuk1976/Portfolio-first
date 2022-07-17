@@ -1,15 +1,7 @@
 .menu__icon-menu,
 .menu__icon-close {
   display: block;
-  width: 18px;
-}
-
-.menu__icon-menu {
-  height: 11px;
-}
-
-.menu__icon-close {
-  height: 18px;
+  fill: $colorIconMenu;
 }
 
 .menu__button {
@@ -30,7 +22,7 @@
   }
 }
 
-.menu__button.is--open {
+.menu__button.is-open {
   & .menu__icon-menu {
     opacity: 0;
     transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
@@ -39,30 +31,25 @@
     opacity: 1;
     transform: rotate(1turn);
     transition: opacity $transitionDurationPrimary $transitionTimingPrimary,
-      transform $transitionDurationPrimary $transitionTimingPrimary $transitionDurationPrimary;
+      transform $transitionDurationSecondary $transitionTimingSecondary;
   }
 }
 
 .menu {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-}
-
-.menu.is--open {
-  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .menu__set {
   font-size: 1rem;
   @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    transform: translateY(-100%);
+    display: block;
+    transform: translateY(0);
+    opacity: 0;
+    transition: transform $transitionDurationPrimary $transitionTimingPrimary,
+      opacity $transitionDurationPrimary $transitionTimingPrimary;
     margin: 0;
     overflow-y: scroll;
   }
@@ -72,18 +59,25 @@
   }
 }
 
+.menu__backdrop.is-open .menu__set {
+  transform: translateY(100%);
+  opacity: 1;
+  z-index: 20;
+}
+
 .menu__item {
   display: block;
+  z-index: 30;
   @media screen and (max-width: 767px) {
     border-bottom: 1px solid $colorBorderBottomMenuMobile;
   }
 }
 
 .menu__link {
-  width: 100%;
   display: block;
   color: inherit;
   background-color: inherit;
+  z-index: 40;
   padding: $paddingItemMenuMobile;
   transition: color $transitionDurationPrimary $transitionTimingPrimary,
     background-color $transitionDurationPrimary $transitionTimingPrimary;

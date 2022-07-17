@@ -4,14 +4,16 @@ body {
   color: $colorParagraph;
   font-size: $fontSizeBodyPrimary; /* 1.125rem */
   line-height: var(--line-height-primary);
-  padding-top: $heitghHeader360;
-
-  @media screen and (min-width: 768px) {
-    padding: $heitghHeader768Plus;
-  }
 }
 
 .body-fixed {
   position: fixed;
   width: 100%;
+}
+
+main {
+  margin-top: $heitghHeader360;
+  @media screen and (min-width: 768px) {
+    margin-top: $heitghHeader768Plus;
+  }
 }
