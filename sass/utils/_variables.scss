@@ -71,3 +71,6 @@ $transitionDurationPrimary: 250ms;
 $transitionDurationSecondary: 400ms;
 $transitionTimingPrimary: cubic-bezier(0.4, 0, 0.2, 1);
 $transitionTimingSecondary: ease;
+
+$shadowMenu: 0px 4px 8px rgba(255, 255, 255, 0.04), 0px 2px 4px rgba(255, 255, 255, 0.08),
+  0px 1px 3px rgba(255, 255, 255, 0.16);

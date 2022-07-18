@@ -22,7 +22,6 @@
 }
 
 .container__header {
-  position: relative;
   @include positioning-flex($jc: start);
 }
 
