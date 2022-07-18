@@ -17,3 +17,15 @@ main {
     margin-top: $heitghHeader768Plus;
   }
 }
+
+.heading-32 {
+  font-size: 32px;
+  line-height: 1.1875;
+  font-weight: $fontWeightBold;
+  color: $colorHeading;
+}
+
+.heading-32--accent {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+}

@@ -1,7 +1,8 @@
 .container {
   padding: $paddingContainer;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (max-width: 359px) {
     width: 100vw;
