@@ -1,36 +1,20 @@
-.hero__section {
+
+.hero__img {
+  height: 300px;
   width: 100%;
   max-width: 1600px;
-  background-color: $bgcPage;
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.99) 4%,
-      rgba(0, 0, 0, 0.7) 8%,
-      rgba(0, 0, 0, 0.5) 12%,
-      rgba(0, 0, 0, 0.1) 50%,
-      rgba(0, 0, 0, 0.5) 88%,
-      rgba(0, 0, 0, 0.7) 92%,
-      rgba(0, 0, 0, 0.99) 96%
-    ),
-    url(../images/hero-767.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
+  object-fit: cover;
+  object-position: left center;
+}
 
-  @media screen and (max-width: 479px) and (min-device-pixel-ratio: 2),
-    screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2),
-    screen and (max-width: 479px) and (min-resolution: 192dpi),
-    screen and (max-width: 479px) and (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.99) 4%,
-        rgba(0, 0, 0, 0.7) 8%,
-        rgba(0, 0, 0, 0.5) 12%,
-        rgba(0, 0, 0, 0.1) 50%,
-        rgba(0, 0, 0, 0.5) 88%,
-        rgba(0, 0, 0, 0.7) 92%,
-        rgba(0, 0, 0, 0.99) 96%
-      ),
-      url(../images/hero-1536.jpeg);
+.hero__heading {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 408px;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 738px;
   }
 }
