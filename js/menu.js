@@ -9,6 +9,6 @@
     menuBtnRef.classList.toggle('is-open');
 
     mobileMenuRef.classList.toggle('is-open');
-    mobileBodyRef.classList.toggle('body-fixed');
+    // mobileBodyRef.classList.toggle('body-fixed');
   });
 })();

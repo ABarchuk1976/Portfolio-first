@@ -8,13 +8,13 @@
   display: none;
   padding: $paddingBtnMenuMobile;
   & .menu__icon-menu {
-    opacity: 1;
-    transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
+    display: block;
   }
   & .menu__icon-close {
-    opacity: 0;
-    transform: rotate(0);
-    transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
+    display: none;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: transform $transitionDurationSecondary $transitionTimingSecondary;
   }
 
   @media screen and (max-width: 767px) {
@@ -24,50 +24,51 @@
 
 .menu__button.is-open {
   & .menu__icon-menu {
-    opacity: 0;
-    transition: opacity $transitionDurationPrimary $transitionTimingPrimary;
+    display: none;
   }
   & .menu__icon-close {
-    opacity: 1;
-    transform: rotate(1turn);
-    transition: opacity $transitionDurationPrimary $transitionTimingPrimary,
-      transform $transitionDurationSecondary $transitionTimingSecondary;
+    display: block;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: transform $transitionDurationSecondary $transitionTimingSecondary;
   }
 }
 
 .menu {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-.menu__set {
-  font-size: 1rem;
   @media screen and (max-width: 767px) {
-    display: block;
-    transform: translateY(0);
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    background-color: inherit;
+    transform: translateY(-100%);
+    width: 100%;
     opacity: 0;
     transition: transform $transitionDurationPrimary $transitionTimingPrimary,
       opacity $transitionDurationPrimary $transitionTimingPrimary;
     margin: 0;
-    overflow-y: scroll;
   }
+}
+
+.menu__backdrop.is-open .menu {
+  @media screen and (max-width: 767px) {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform $transitionDurationPrimary $transitionTimingPrimary,
+      opacity $transitionDurationPrimary $transitionTimingPrimary;
+  }
+}
+
+.menu__set {
+  font-size: 1rem;
 
   @media screen and (min-width: 768px) {
     @include positioning-flex();
   }
 }
 
-.menu__backdrop.is-open .menu__set {
-  transform: translateY(100%);
-  opacity: 1;
-  z-index: 20;
-}
-
 .menu__item {
   display: block;
-  z-index: 30;
+  width: 100%;
   @media screen and (max-width: 767px) {
     border-bottom: 1px solid $colorBorderBottomMenuMobile;
   }
@@ -77,7 +78,6 @@
   display: block;
   color: inherit;
   background-color: inherit;
-  z-index: 40;
   padding: $paddingItemMenuMobile;
   transition: color $transitionDurationPrimary $transitionTimingPrimary,
     background-color $transitionDurationPrimary $transitionTimingPrimary;

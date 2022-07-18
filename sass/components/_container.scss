@@ -1,6 +1,5 @@
 .container {
   padding: $paddingContainer;
-  @include positioning-flex($jc: space-between);
   width: 100%;
   margin: 0 auto;
 
