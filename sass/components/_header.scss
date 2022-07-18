@@ -39,6 +39,7 @@
     height: 100vh;
     background-color: $bgcBackdrop;
     transition: visibility $transitionDurationPrimary $transitionTimingPrimary;
+    z-index: 10;
   }
 }
 
