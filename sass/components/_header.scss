@@ -17,7 +17,7 @@
   @media screen and (min-width: 768px) {
     padding: $paddingHeaderTablet;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1160px) {
     padding: $paddingHeaderDesctop;
   }
 }
@@ -38,7 +38,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: $bgcBackdrop;
+    background-color: $bgcAccentHero;
     transition: visibility $transitionDurationPrimary $transitionTimingPrimary;
     z-index: 10;
   }

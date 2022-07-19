@@ -17,7 +17,7 @@ $bgcAccentSecondary: rgba(230, 82, 33, 0.2);
 $bgcAccentPrimary: rgba(82, 33, 230, 0.2);
 $bgcAccentPrimaryHover: #2a0b85;
 $bgcMenuMobile: rgba(0, 0, 0, 0);
-$bgcBackdrop: #181823;
+$bgcAccentHero: #181823;
 
 $fontFamilyPrimary: 'Sen';
 $fontFamilyAlternative: 'sans-serif';
@@ -37,33 +37,21 @@ $fontWeightBold: 700;
 
 $lineHeightPrimary: 1.6875rem;
 
-$paddingHeaderMobileLess: 0 0;
-$paddingHeaderMobile: 0 0.25rem;
-$paddingHeaderTablet: 0rem 1.5rem;
-$paddingHeaderDesctop: 0rem 3.5rem;
+$paddingHeaderMobile: 0 1.25rem;
+$paddingHeaderTablet: 0rem 2.5rem;
+$paddingHeaderDesctop: 0rem 4.5rem;
 
-$paddingSectionMobileLess: 3rem 0;
-$paddingSectionMobile: 3rem 0.25rem;
-$paddingSectionTablet: 5rem 1.5rem;
-$paddingSectionDesctop: 7.5rem 3.5rem;
+$paddingSectionMobile: 3rem 1.25rem;
+$paddingSectionTablet: 5rem 2.5rem;
+$paddingSectionDesctop: 7.5rem 4.5rem;
 
-$paddingFooterMobile: 3rem 0.25rem;
-$paddingFooterTablet: 5rem 1.5rem;
-$paddingFooterDesctop: 5rem 3.5rem;
-
-$paddingContainerHeaderMobile: 1.5rem 1rem;
-$paddingContainerHeaderTablet: 2rem 1rem;
-$paddingContainerHeaderDesctop: 2rem 1rem;
-
-$paddingContainer: 0 1rem;
+$paddingFooterMobile: 3rem 1.25rem;
+$paddingFooterTablet: 5rem 2.5rem;
+$paddingFooterDesctop: 5rem 4.5rem;
 
 $paddingLinkMenuHeader: 2rem 1.5rem;
 $paddingBtnMenuMobile: 1.5rem 0;
 $paddingItemMenuMobile: 2rem 1.5rem;
-
-$widthContainer360: 22rem;
-$widthContainer768: 45rem;
-$widthContainer1440: 83rem;
 
 $heitghHeader360: 4.5rem;
 $heitghHeader768Plus: 5.5rem;

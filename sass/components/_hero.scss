@@ -18,6 +18,11 @@
 }
 
 .container__hero {
+  @media screen and (max-width: 767px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: $bgcAccentHero;
+  }
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 50%;
@@ -27,7 +32,7 @@
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1160px) {
     width: 738px;
   }
 }
@@ -38,7 +43,7 @@
     line-height: 1.2;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1160px) {
     font-size: 4.875rem;
   }
 }
