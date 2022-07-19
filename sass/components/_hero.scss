@@ -17,21 +17,35 @@
   }
 }
 
-.hero__heading {
+.container__hero {
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 50%;
-    right: 1rem;
+    right: 0;
     transform: translateY(-50%);
-    display: inline-block;
-    width: 408px;
-    font-size: 3rem;
-    line-height: 1.2;
+    width: 410px;
     margin-left: auto;
   }
 
   @media screen and (min-width: 1440px) {
     width: 738px;
+  }
+}
+
+.hero__heading {
+  @media screen and (min-width: 768px) {
+    font-size: 2.75rem;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1440px) {
     font-size: 4.875rem;
+  }
+}
+
+.hero__heading--append {
+  margin-bottom: 1rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 2rem;
   }
 }

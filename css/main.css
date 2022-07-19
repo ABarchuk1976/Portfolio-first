@@ -67,7 +67,6 @@ body {
   color: #8491a0;
   font-size: 1.125rem;
   /* 1.125rem */
-  line-height: var(--line-height-primary);
 }
 
 .body-fixed {
@@ -95,6 +94,18 @@ main {
 .heading-32--accent {
   display: block;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.paragraph-18 {
+  line-height: 1.5;
+}
+
+.paragraph-18--on-light {
+  color: #5b6876;
+}
+
+.paragraph-18--white {
+  color: #ffffff;
 }
 
 .visually-hidden {
@@ -445,24 +456,43 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .hero__heading {
+  .container__hero {
     position: absolute;
     top: 50%;
-    right: 1rem;
+    right: 0;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    display: inline-block;
-    width: 408px;
-    font-size: 3rem;
-    line-height: 1.2;
+    width: 410px;
     margin-left: auto;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .hero__heading {
+  .container__hero {
     width: 738px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    font-size: 2.75rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__heading {
     font-size: 4.875rem;
+  }
+}
+
+.hero__heading--append {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__heading--append {
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

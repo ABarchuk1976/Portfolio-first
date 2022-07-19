@@ -3,7 +3,6 @@ body {
   background-color: $bgcPage;
   color: $colorParagraph;
   font-size: $fontSizeBodyPrimary; /* 1.125rem */
-  line-height: var(--line-height-primary);
 }
 
 .body-fixed {
@@ -28,4 +27,16 @@ main {
 .heading-32--accent {
   display: block;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.paragraph-18 {
+  line-height: 1.5;
+}
+
+.paragraph-18--on-light {
+  color: $colorParagraphOnLight;
+}
+
+.paragraph-18--white {
+  color: $colorHeading;
 }
