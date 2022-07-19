@@ -435,9 +435,9 @@ body {
     position: absolute;
     right: 40px;
     top: 50%;
+    width: calc(100vw - 400px);
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: calc(100vw -360px);
   }
 }
 
@@ -446,9 +446,10 @@ body {
     position: absolute;
     right: 72px;
     top: 50%;
+    width: calc(100vw - 490px);
+    max-width: 1110px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 738px;
   }
 }
 
@@ -458,14 +459,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero__heading {
-    width: calc(100vw - 360px);
     font-size: 3.5rem;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__heading {
-    width: 740px;
     font-size: 4.875rem;
   }
 }
