@@ -67,6 +67,13 @@ body {
   color: #8491a0;
   font-size: 1.125rem;
   /* 1.125rem */
+  padding-top: 4.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 5.5rem;
+  }
 }
 
 .body-fixed {
@@ -74,19 +81,9 @@ body {
   width: 100%;
 }
 
-main {
-  margin-top: 4.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  main {
-    margin-top: 5.5rem;
-  }
-}
-
 .heading-32 {
-  font-size: 32px;
-  line-height: 1.1875;
+  font-size: 2rem;
+  line-height: 1.2;
   font-weight: 700;
   color: #ffffff;
 }
@@ -323,6 +320,7 @@ main {
 
 .menu__set {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -382,5 +380,103 @@ main {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section__hero {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__decoration {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: calc(100% - 300px);
+    height: 100%;
+    background-color: #181823;
+  }
+}
+
+.hero__thumb {
+  width: 100vw;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left center;
+     object-position: left center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__thumb {
+    height: 650px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__thumb {
+    width: 750px;
+    height: 850px;
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container__hero {
+    padding: 3rem 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__hero {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: calc(100vw -360px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__hero {
+    position: absolute;
+    right: 72px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 738px;
+  }
+}
+
+.hero__heading {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    width: calc(100vw - 360px);
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__heading {
+    width: 740px;
+    font-size: 4.875rem;
+  }
+}
+
+.hero__heading--append {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__heading--append {
+    margin-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

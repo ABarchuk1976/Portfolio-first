@@ -3,6 +3,10 @@ body {
   background-color: $bgcPage;
   color: $colorParagraph;
   font-size: $fontSizeBodyPrimary; /* 1.125rem */
+  padding-top: $heitghHeader360;
+  @media screen and (min-width: 768px) {
+    padding-top: $heitghHeader768Plus;
+  }
 }
 
 .body-fixed {
@@ -10,16 +14,9 @@ body {
   width: 100%;
 }
 
-main {
-  margin-top: $heitghHeader360;
-  @media screen and (min-width: 768px) {
-    margin-top: $heitghHeader768Plus;
-  }
-}
-
 .heading-32 {
-  font-size: 32px;
-  line-height: 1.1875;
+  font-size: 2rem;
+  line-height: 1.2;
   font-weight: $fontWeightBold;
   color: $colorHeading;
 }

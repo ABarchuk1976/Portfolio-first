@@ -1,1 +1,77 @@
+.section__hero {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
 
+.hero__decoration {
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: calc(100% - 300px);
+    height: 100%;
+    background-color: $bgcAccentHero;
+  }
+}
+
+.hero__thumb {
+  width: 100vw;
+  height: 300px;
+  object-fit: cover;
+  object-position: left center;
+
+  @media screen and (min-width: 768px) {
+    height: 650px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 750px;
+    height: 850px;
+    padding: 100px 0;
+  }
+}
+
+.container__hero {
+  @media screen and (max-width: 767px) {
+    padding: $paddingContainerMobile;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100vw -360px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    right: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 738px;
+  }
+}
+
+.hero__heading {
+  display: block;
+  @media screen and (min-width: 768px) {
+    width: calc(100vw - 360px);
+    font-size: 3.5rem;
+  }
+  @media screen and (min-width: 768px) {
+    width: 740px;
+    font-size: 4.875rem;
+  }
+}
+
+.hero__heading--append {
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 2rem;
+  }
+}
