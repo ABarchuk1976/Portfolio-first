@@ -1,28 +1,23 @@
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
   width: 100%;
   max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: $bgcPage;
-  @media screen and (max-width: 359px) {
-    padding: $paddingHeaderMobileLess;
-  }
-  @media screen and (min-width: 360px) {
-    padding: $paddingHeaderMobile;
-  }
+  padding: $paddingHeaderMobile;
+
   @media screen and (min-width: 768px) {
     padding: $paddingHeaderTablet;
   }
-  @media screen and (min-width: 1160px) {
+  @media screen and (min-width: 1200px) {
     padding: $paddingHeaderDesctop;
   }
 }
 
-.container__header {
+.header__container {
   @include positioning-flex($jc: start);
 }
 
@@ -40,7 +35,7 @@
     height: 100vh;
     background-color: $bgcAccentHero;
     transition: visibility $transitionDurationPrimary $transitionTimingPrimary;
-    z-index: 10;
+    z-index: 110;
   }
 }
 

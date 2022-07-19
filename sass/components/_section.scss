@@ -2,16 +2,4 @@
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding: $paddingSectionMobileLess;
-  @media screen and (min-width: 360px) {
-    padding: $paddingSectionMobile;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: $paddingSectionTablet;
-  }
-
-  @media screen and (min-width: 1160px) {
-    padding: $paddingSectionDesctop;
-  }
 }

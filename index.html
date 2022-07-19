@@ -29,7 +29,7 @@
   </head>
   <body class="" body>
     <header class="header">
-      <div class="container container__header">
+      <div class="header__container">
         <a href="/" class="animate__animated animate__backInLeft logo logo_header"
           ><span class="logo__decoration">Andrii&nbsp;&nbsp;&nbsp;Barchuk</span>
         </a>
@@ -62,11 +62,17 @@
     </header>
 
     <main>
-      <section>
+      <section class="section section__hero">
+        <div class="hero__decoration"></div>
         <div class="hero__thumb">
           <picture>
             <source
-              srcset="./images/hero-1159 1x, ./images/hero-2318.jpeg 2x"
+              srcset="./images/hero-750.jpeg 1x, ./images/hero-1500.jpeg 2x"
+              media="(min-width: 1200px)"
+              type="image/jpeg"
+            />
+            <source
+              srcset="./images/hero-1199.jpeg 1x, ./images/hero-2398.jpeg 2x"
               media="(min-width: 768px) and (max-width: 1199px)"
               type="image/jpeg"
             />
@@ -75,7 +81,7 @@
               media="(max-width: 767px)"
               type="image/jpeg"
             />
-            <img class="hero__img" src="./images/hero-1159.jpeg" alt="My photo with part of code" />
+            <img class="hero__img" src="./images/hero-767.jpeg" alt="My black and white photo" />
           </picture>
 
           <div class="container container__hero">

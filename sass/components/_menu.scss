@@ -41,7 +41,7 @@
     // top: 0;
     background-color: inherit;
     transform: translateY(-100%);
-    width: $widthContainer360;
+    width: 100%;
     opacity: 0;
     transition: transform $transitionDurationPrimary $transitionTimingPrimary,
       opacity $transitionDurationPrimary $transitionTimingPrimary;
