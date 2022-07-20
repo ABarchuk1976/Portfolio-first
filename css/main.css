@@ -17,6 +17,10 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -136,7 +140,9 @@ body {
 
 .paragraph-16 {
   font-size: 1rem;
+  font-weight: normal;
   line-height: 1.5;
+  color: #8491a0;
 }
 
 .paragraph-18 {
@@ -416,7 +422,7 @@ body {
 
 .menu__link:hover, .menu__link:focus {
   color: #ffffff;
-  background-color: rgba(82, 33, 230, 0.3);
+  background-color: #e65221;
 }
 
 .menu__link--accent {
@@ -529,30 +535,22 @@ body {
 .hero__heading {
   display: block;
   font-size: 2rem;
-  line-height: 1.2;
   font-weight: 700;
+  line-height: 1.2;
   color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .hero__heading {
     font-size: 2.6rem;
+    margin-bottom: 2rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__heading {
     font-size: 4.3rem;
-  }
-}
-
-.hero__heading--append {
-  margin-bottom: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .hero__heading--append {
-    margin-bottom: 2rem;
   }
 }
 
@@ -594,9 +592,20 @@ body {
 
 .experience__item {
   display: block;
-  -ms-flex-preferred-size: calc(100% / 3 - 40px);
-      flex-basis: calc(100% / 3 - 40px);
-  margin-left: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .experience__item + .experience__item {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .experience__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 40px);
+        flex-basis: calc(100% / 3 - 40px);
+    margin-left: 40px;
+  }
 }
 
 .experience__label {
@@ -615,7 +624,11 @@ body {
   margin-bottom: 1rem;
 }
 
-.experience__subtitle--accent {
+.experience__subtitle--accent-primary {
+  color: #5221e6;
+}
+
+.experience__subtitle--accent-secondary {
   color: #e65221;
 }
 

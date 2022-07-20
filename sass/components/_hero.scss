@@ -70,23 +70,14 @@
 
 .hero__heading {
   display: block;
-  font-size: 2rem;
-  line-height: 1.2;
-  font-weight: $fontWeightBold;
-  color: $colorHeading;
-
-  @media screen and (min-width: 768px) {
-    font-size: 2.6rem;
-  }
-  @media screen and (min-width: 1200px) {
-    font-size: 4.3rem;
-  }
-}
-
-.hero__heading--append {
+  @include font-params(2rem);
   margin-bottom: 1rem;
 
   @media screen and (min-width: 768px) {
+    font-size: 2.6rem;
     margin-bottom: 2rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 4.3rem;
   }
 }

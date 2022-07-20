@@ -16,8 +16,15 @@
 
 .experience__item {
   display: block;
-  flex-basis: calc(100% / 3 - 40px);
-  margin-left: 40px;
+  & + & {
+    @media screen and (max-width: 767px) {
+      margin-top: 2.5rem;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - 40px);
+    margin-left: 40px;
+  }
 }
 
 .experience__label {
@@ -28,7 +35,10 @@
 .experience__subtitle {
   @include font-params($fs: 1.5rem, $lh: 1.5);
   margin-bottom: 1rem;
-  &--accent {
+  &--accent-primary {
+    color: $colorAccentPrimary;
+  }
+  &--accent-secondary {
     color: $colorAccentSecondary;
   }
   @media screen and (min-width: 768px) {

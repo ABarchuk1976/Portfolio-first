@@ -62,8 +62,7 @@ body {
 }
 
 .paragraph-16 {
-  font-size: 1rem;
-  line-height: 1.5;
+  @include font-params(1rem, normal, 1.5, $colorParagraph);
 }
 
 .paragraph-18 {

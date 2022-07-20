@@ -30,7 +30,7 @@
   <body class="" body>
     <header class="header">
       <div class="header__container">
-        <a href="/" class="animate__animated animate__backInLeft logo logo_header"
+        <a href="/" class="logo logo_header"
           ><span class="logo__decoration">Andrii&nbsp;&nbsp;&nbsp;Barchuk</span>
         </a>
         <button class="menu__button" data-menu-button>
@@ -41,10 +41,10 @@
         </button>
 
         <div class="menu__backdrop" data-menu>
-          <nav role="navigation" class="menu">
+          <nav role="navigation" class="menu" id="menu">
             <ul class="menu__set">
               <li class="menu__item">
-                <a href="" class="menu__link">Experience</a>
+                <a href="#experience" class="menu__link">Experience</a>
               </li>
               <li class="menu__item">
                 <a href="" class="menu__link">Skills</a>
@@ -64,7 +64,7 @@
     <main>
       <section class="section section__hero">
         <div class="hero__decoration"></div>
-        <div class="hero__thumb">
+        <div class="hero__thumb animate__animated animate__backInLeft">
           <picture class="hero__picture">
             <source
               srcset="./images/hero-750.jpeg 1x, ./images/hero-1500.jpeg 2x"
@@ -90,55 +90,69 @@
         </div>
 
         <div class="container__hero">
-          <h1 class="hero__heading hero__heading--append">
+          <h1 class="hero__heading hero__heading--append animate__animated animate__backInRight">
             I’m Andrii Barchuk.<br />
             A Frontend Developer
             <span class="heading-32--accent">based in Ukraine.</span>
           </h1>
-          <p class="paragraph-18 paragraph-18--white">
+          <p
+            class="paragraph-18 paragraph-18--white animate__animated animate__backInRight animate__delay-1s"
+          >
             I have all the necessary knowledge and skills, which I undergone intensive training in
             GoIT school. If you have a great project that needs my skills, I'm your guy.
           </p>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="experience">
         <div class="container">
           <b class="overline-16 overline-16__container">Work experience</b>
           <h2 class="experience__title">Experience I have had in the past</h2>
           <ul class="experience__list">
-            <li class="experience__item animate__animated animate__backInLeft animate__delay-2s">
+            <li class="experience__item animate__animated animate__backInLeft">
               <strong class="experience__label">01</strong>
               <h3 class="experience__subtitle experience__subtitle__container">
-                GoIT, online courses
+                <span class="experience__subtitle--accent-primary">GoIT</span>, Fullstack Developer
+                courses
               </h3>
-              <p class="paragraph-16"></p>
+              <p class="paragraph-16">
+                Real online education with theoratical and practical experience.
+              </p>
             </li>
-            <li class="experience__item animate__animated animate__backInLeft animate__delay-1s">
+            <li class="experience__item animate__animated animate__backInRight animate__delay-1s">
               <strong class="experience__label">02</strong>
               <h3 class="experience__subtitle">
-                <span class="experience__subtitle--accent-secondary">Facebook</span>, Product
-                Designer
+                <span class="experience__subtitle--accent-primary">Freelace</span>, Frontend Trainee
               </h3>
-              <p class="paragraph-16"></p>
+              <p class="paragraph-16">
+                Building websites from scratch, development of the website structure and the design
+                layouts.
+              </p>
             </li>
-            <li class="experience__item animate__animated animate__backInLeft">
+            <li class="experience__item animate__animated animate__backInLeft animate__delay-2s">
               <strong class="experience__label">03</strong>
-              <h3 class="experience__subtitle">Dribbble, Graphic Designer</h3>
-              <p class="paragraph-16"></p>
+              <h3 class="experience__subtitle">
+                <span class="experience__subtitle--accent-secondary">Your Company</span>, Frontend
+                Junior
+              </h3>
+              <p class="paragraph-16">
+                Looking for a friendly team with career growth and training opportunities.
+              </p>
             </li>
           </ul>
         </div>
       </section>
       <section class="section">
-        <div class="container">
-          <h2 class="heading-32">Philosophy & values</h2>
-          <p>
-            I think everyone wants the same thing - relationship with humanity, peace with the
-            metaphysical, and experience with the universe. I try to grasp these things with my
-            values: authenticity, creativity, & professionalism.
-          </p>
-          <button type="button">More about me</button>
-          <div class="about-me"></div>
+        <div class="container about-me__container">
+          <div class="about-me__side-bar">
+            <h2 class="heading-32">Philosophy & values</h2>
+            <p>
+              I think everyone wants the same thing - relationship with humanity, peace with the
+              metaphysical, and experience with the universe. I try to grasp these things with my
+              values: authenticity, creativity, & professionalism.
+            </p>
+            <button type="button">More about me</button>
+          </div>
+          <div class="about-me__img"></div>
         </div>
       </section>
       <section class="section">
