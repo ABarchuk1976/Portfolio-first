@@ -65,7 +65,7 @@
       <section class="section section__hero">
         <div class="hero__decoration"></div>
         <div class="hero__thumb">
-          <picture>
+          <picture class="hero__picture">
             <source
               srcset="./images/hero-750.jpeg 1x, ./images/hero-1500.jpeg 2x"
               media="(min-width: 1200px)"
@@ -81,13 +81,18 @@
               media="(max-width: 767px)"
               type="image/jpeg"
             />
-            <img src="./images/hero-767.jpeg" alt="My black and white photo" />
+            <img
+              class="hero__img"
+              srcset="./images/hero-1199.jpeg 1x, ./images/hero-2398.jpeg 2x"
+              alt="My black and white photo"
+            />
           </picture>
         </div>
 
         <div class="container__hero">
           <h1 class="hero__heading hero__heading--append heading-32">
-            I’m Andrii Barchuk. Frontend Developer
+            I’m Andrii Barchuk.<br />
+            A Frontend Developer
             <span class="heading-32--accent">based in Ukraine.</span>
           </h1>
           <p class="paragraph-18 paragraph-18--white">

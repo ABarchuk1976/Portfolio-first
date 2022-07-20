@@ -17,33 +17,44 @@
 }
 
 .hero__thumb {
-  width: 100vw;
   height: 300px;
-  object-fit: cover;
-  object-position: left center;
-
-  @media screen and (min-width: 768px) {
+  min-width: 300px;
+  max-width: 767px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     height: 650px;
-    width: 100%;
+    min-width: 768px;
+    max-width: 1199px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 750px;
     height: 850px;
-    padding: 100px 0;
+    width: 750px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.hero__picture,
+.hero__img {
+  object-fit: cover;
+  object-position: left center;
+  min-height: 300px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-height: 650px;
   }
 }
 
 .container__hero {
   @media screen and (max-width: 767px) {
     padding: $paddingContainerMobile;
+    background-color: $bgcAccentHero;
   }
 
   @media screen and (min-width: 768px) {
     position: absolute;
     right: 40px;
     top: 50%;
-    width: calc(100vw - 400px);
+    width: calc(100vw - 500px);
     transform: translateY(-50%);
   }
 
@@ -51,7 +62,7 @@
     position: absolute;
     right: 72px;
     top: 50%;
-    width: calc(100vw - 490px);
+    width: calc(100% - 675px);
     max-width: 1110px;
     transform: translateY(-50%);
   }
@@ -60,10 +71,10 @@
 .hero__heading {
   display: block;
   @media screen and (min-width: 768px) {
-    font-size: 3.5rem;
+    font-size: 2.6rem;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 4.875rem;
+    font-size: 4.3rem;
   }
 }
 
