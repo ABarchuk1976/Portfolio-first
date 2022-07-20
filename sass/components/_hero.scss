@@ -70,6 +70,11 @@
 
 .hero__heading {
   display: block;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: $fontWeightBold;
+  color: $colorHeading;
+
   @media screen and (min-width: 768px) {
     font-size: 2.6rem;
   }
