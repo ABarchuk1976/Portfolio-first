@@ -1,0 +1,23 @@
+.more-about__section {
+  // display: none;
+  background-color: $bgcAccentPrimary;
+}
+
+.more-about__section.is-show {
+  display: block;
+}
+
+.more-about__title {
+  margin-bottom: 1.5rem;
+}
+
+.more-about__subtitle {
+  @include font-params(1.5rem, $fontWeightBold, 1.5, $colorHeadingOnLight);
+  margin-bottom: 1rem;
+}
+
+.more-about__paragraph {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid $colorParagraph;
+}
