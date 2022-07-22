@@ -1,12 +1,13 @@
 .menu__icon-menu,
 .menu__icon-close {
   display: block;
-  fill: $colorIconMenu;
+  fill: currentColor;
 }
 
 .menu__button {
   display: none;
   padding: $paddingBtnMenuMobile;
+  color: $colorIconMenu;
   & .menu__icon-menu {
     display: block;
   }

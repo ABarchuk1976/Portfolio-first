@@ -1,0 +1,53 @@
+.sticky-menu {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 110;
+}
+.sticky-btn {
+  @include positioning-flex();
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background-color: $colorAccentPrimary;
+  color: $colorHeading;
+
+  @media screen and (min-width: 1200px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  & .menu__icon-menu {
+    display: block;
+  }
+  & .menu__icon-close {
+    display: none;
+    transform: rotate(0deg);
+    transform-origin: center;
+    transition: transform $transitionDurationSecondary $transitionTimingSecondary;
+  }
+}
+
+.sticky-menu.is-open {
+  & .menu__icon-menu {
+    display: block;
+  }
+  & .menu__icon-close {
+    display: block;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: transform $transitionDurationSecondary $transitionTimingSecondary;
+  }
+}
+
+.sticky-menu__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  color: inherit;
+  @media screen and (min-width: 1200px) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

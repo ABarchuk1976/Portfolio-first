@@ -75,13 +75,6 @@ body {
   color: #8491a0;
   font-size: 1.125rem;
   /* 1.125rem */
-  padding-top: 4.5rem;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    padding-top: 5.5rem;
-  }
 }
 
 .body-fixed {
@@ -98,7 +91,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .heading-h2 {
-    font-size: 3.4375rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -200,12 +193,7 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 100;
+  position: relative;
   width: 100%;
   max-width: 1600px;
   background-color: #000000;
@@ -319,12 +307,13 @@ body {
 .menu__icon-menu,
 .menu__icon-close {
   display: block;
-  fill: #c4c4c4;
+  fill: currentColor;
 }
 
 .menu__button {
   display: none;
   padding: 1.5rem 0;
+  color: #c4c4c4;
 }
 
 .menu__button .menu__icon-menu {
@@ -458,6 +447,84 @@ body {
 .menu__link--accent:hover, .menu__link--accent:focus {
   color: #ffffff;
   background-color: #2a0b85;
+}
+
+.sticky-menu {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 110;
+}
+
+.sticky-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #5221e6;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .sticky-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.sticky-btn .menu__icon-menu {
+  display: block;
+}
+
+.sticky-btn .menu__icon-close {
+  display: none;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.sticky-menu.is-open .menu__icon-menu {
+  display: block;
+}
+
+.sticky-menu.is-open .menu__icon-close {
+  display: block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+.sticky-menu__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  color: inherit;
+}
+
+@media screen and (min-width: 1200px) {
+  .sticky-menu__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 .section {
@@ -751,28 +818,92 @@ body {
 }
 
 .more-about__section {
+  display: none;
   background-color: #fbe4ff;
 }
 
-.more-about__section.is-show {
+.more-about__section.is-open {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .more-about__inner {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .more-about__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 0;
+  }
+}
+
 .more-about__title {
-  margin-bottom: 1.5rem;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .more-about__title {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .more-about__title {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: right;
+    padding-right: 1.5rem;
+  }
 }
 
 .more-about__subtitle {
+  display: block;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5;
   color: #181823;
-  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .more-about__subtitle {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .more-about__subtitle {
+    text-align: right;
+    padding-right: 1.5rem;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .more-about__paragraph {
-  margin-bottom: 1rem;
-  padding-left: 1rem;
+  display: block;
+  padding-left: 1.5rem;
   border-left: 1px solid #8491a0;
+}
+
+@media screen and (min-width: 768px) {
+  .more-about__paragraph {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.more-about__btn {
+  color: #181823;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

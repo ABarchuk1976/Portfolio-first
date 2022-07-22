@@ -26,6 +26,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="" body>
     <header class="header">
@@ -62,9 +63,17 @@
     </header>
 
     <main>
+      <div class="sticky-menu">
+        <button class="sticky-btn" type="button">
+          <svg class="sticky-menu__icon">
+            <use href="./images/icons.svg#icon-menu" class="menu__icon-menu"></use>
+            <use href="./images/icons.svg#icon-close" class="menu__icon-close"></use>
+          </svg>
+        </button>
+      </div>
       <section class="section section__hero">
         <div class="hero__decoration"></div>
-        <div class="hero__thumb animate__animated animate__fadeInLeft">
+        <div class="hero__thumb" data-aos="fade-right" data-aos-duration="2000">
           <picture class="hero__picture">
             <source
               srcset="./images/hero-750.jpeg 1x, ./images/hero-1500.jpeg 2x"
@@ -90,13 +99,20 @@
         </div>
 
         <div class="container__hero">
-          <h1 class="hero__heading hero__heading--append animate__animated animate__fadeInRight">
+          <h1
+            class="hero__heading hero__heading--append"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             I’m Andrii Barchuk.<br />
             A Frontend Developer
             <span class="heading-32--accent">based in Ukraine.</span>
           </h1>
           <p
-            class="paragraph-18 paragraph-18--white animate__animated animate__fadeInRight animate__delay-1s"
+            class="paragraph-18 paragraph-18--white"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="300"
           >
             I have all the necessary knowledge and skills, which I undergone intensive training in
             GoIT school. If you have a great project that needs my skills, I'm your guy.
@@ -108,7 +124,7 @@
           <b class="overline-16 overline-16__container">Work experience</b>
           <h2 class="experience__title">Experience I have had in the past</h2>
           <ul class="experience__list">
-            <li class="experience__item animate__animated animate__fadeInLeft">
+            <li class="experience__item" data-aos="fade-right" data-aos-duration="2000">
               <strong class="experience__label">01</strong>
               <h3 class="experience__subtitle experience__subtitle__container">
                 <span class="experience__subtitle--accent-primary">GoIT</span>, Fullstack Developer
@@ -118,7 +134,12 @@
                 Real online education with theoratical and practical experience.
               </p>
             </li>
-            <li class="experience__item animate__animated animate__fadeInRight animate__delay-1s">
+            <li
+              class="experience__item"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+            >
               <strong class="experience__label">02</strong>
               <h3 class="experience__subtitle">
                 <span class="experience__subtitle--accent-primary">Freelace</span>, Frontend Trainee
@@ -128,7 +149,12 @@
                 layouts.
               </p>
             </li>
-            <li class="experience__item animate__animated animate__fadeInLeft animate__delay-2s">
+            <li
+              class="experience__item"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-delay="600"
+            >
               <strong class="experience__label">03</strong>
               <h3 class="experience__subtitle">
                 <span class="experience__subtitle--accent-secondary">Your Company</span>, Frontend
@@ -151,37 +177,46 @@
             metaphysical, and experience with the universe. I try to grasp these things with my
             values: authenticity, creativity, & professionalism.
           </p>
-          <button type="button" class="more-btn about-me__btn" btn-more-about>More about me</button>
+          <button type="button" class="more-btn about-me__btn" btn-more-about>
+            <a href="#more-about">More about me</a>
+          </button>
         </div>
         <div class="about-me__img"></div>
       </section>
-      <section class="section more-about__section" more-about-me>
+      <section id="more-about" class="section more-about__section" more-about-open>
         <div class="container">
-          <h2 class="heading-h2 heading-h2--on-light more-about__title">Andrii Barchuk</h2>
-          <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
-            <a href="mailto:abarchuk1976@gmail.com" class="more-about__email"
-              >abarchuk1976@gmail.com</a
-            ><br />
-            <a href="tel:=+380501616709" class="more-about__mobile">+380 (50) 16-16-709</a><br />
-            Kyiv, Ukraine<br />
-            22.07.1976<br />
-            married, have two daughters
-          </p>
+          <div class="more-about__inner">
+            <h2 class="heading-h2 heading-h2--on-light more-about__title">Andrii Barchuk</h2>
+            <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
+              <a href="mailto:abarchuk1976@gmail.com" class="more-about__email"
+                >abarchuk1976@gmail.com</a
+              ><br />
+              <a href="tel:=+380501616709" class="more-about__mobile">+380 (50) 16-16-709</a><br />
+              Kyiv, Ukraine<br />
+              22.07.1976<br />
+              married, have two daughters
+            </p>
+          </div>
 
-          <h3 class="more-about__subtitle">Languages</h3>
-          <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
-            English: intermadiate<br />
-            Ukrainian: native<br />
-            Russian: native
-          </p>
+          <div class="more-about__inner">
+            <h3 class="more-about__subtitle">Languages</h3>
+            <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
+              English: intermadiate<br />
+              Ukrainian: native<br />
+              Russian: native
+            </p>
+          </div>
 
-          <h3 class="more-about__subtitle">Academic summary</h3>
-          <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
-            The Master's degree in Cybernetics (1999)<br />
-            Specialization: Applied Mathematics<br />
-            T.Shevchenko Kyiv National Univercity, Faculty of Cybernatics, Kyiv, Ukraine
-          </p>
-          <button type="button" class="more-btn more-about__btn" btn-more-about>
+          <div class="more-about__inner">
+            <h3 class="more-about__subtitle">Academic summary</h3>
+            <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
+              The Master's degree in Cybernetics (1999)<br />
+              Specialization: Applied Mathematics<br />
+              T.Shevchenko Kyiv National Univercity, Faculty of Cybernetics, Kyiv, Ukraine
+            </p>
+          </div>
+
+          <button type="button" class="more-btn more-about__btn" btn-close-more-about>
             Hide about me
           </button>
         </div>
@@ -450,6 +485,11 @@
       </div>
     </footer>
 
+    <script src="./js/more-about.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

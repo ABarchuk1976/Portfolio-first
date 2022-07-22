@@ -3,11 +3,17 @@ body {
   background-color: $bgcPage;
   color: $colorParagraph;
   font-size: $fontSizeBodyPrimary; /* 1.125rem */
-  padding-top: $heitghHeader360;
-  @media screen and (min-width: 768px) {
-    padding-top: $heitghHeader768Plus;
-  }
+  // padding-top: $heitghHeader360;
+  // @media screen and (min-width: 768px) {
+  //   padding-top: $heitghHeader768Plus;
+  // }
 }
+// main {
+//   padding-top: $heitghHeader360;
+//   @media screen and (min-width: 768px) {
+//     padding-top: $heitghHeader768Plus;
+//   }
+// }
 
 .body-fixed {
   position: fixed;
@@ -21,7 +27,7 @@ body {
   color: $colorHeading;
 
   @media screen and (min-width: 768px) {
-    font-size: 3.4375rem;
+    font-size: 2.7rem;
   }
 }
 
