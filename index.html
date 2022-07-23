@@ -34,14 +34,19 @@
         <a href="/" class="logo logo_header"
           ><span class="logo__decoration">Andrii&nbsp;&nbsp;&nbsp;Barchuk</span>
         </a>
-        <button class="menu__button" data-menu-button>
+        <button
+          class="menu__button"
+          aria-expanded="false"
+          aria-controls="menu-backdrop"
+          data-menu-button
+        >
           <svg aria-label="Control button of menu-bar" width="18" height="18">
             <use href="./images/icons.svg#icon-menu" class="menu__icon-menu"></use>
             <use href="./images/icons.svg#icon-close" class="menu__icon-close"></use>
           </svg>
         </button>
 
-        <div class="menu__backdrop" data-menu>
+        <div id="menu-backdrop" class="menu__backdrop" data-menu>
           <nav role="navigation" class="menu" id="menu">
             <ul class="menu__set">
               <li class="menu__item">
@@ -73,7 +78,7 @@
       </div>
       <section class="section section__hero">
         <div class="hero__decoration"></div>
-        <div class="hero__thumb" data-aos="fade-right" data-aos-duration="2000">
+        <div class="hero__thumb" data-aos="fade-right" data-aos-duration="1000">
           <picture class="hero__picture">
             <source
               srcset="./images/hero-750.jpeg 1x, ./images/hero-1500.jpeg 2x"
@@ -102,7 +107,7 @@
           <h1
             class="hero__heading hero__heading--append"
             data-aos="fade-left"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
           >
             I’m Andrii Barchuk.<br />
             A Frontend Developer
@@ -111,7 +116,7 @@
           <p
             class="paragraph-18 paragraph-18--white"
             data-aos="fade-left"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-delay="300"
           >
             I have all the necessary knowledge and skills, which I undergone intensive training in
@@ -124,7 +129,7 @@
           <b class="overline-16 overline-16__container">Work experience</b>
           <h2 class="experience__title">Experience I have had in the past</h2>
           <ul class="experience__list">
-            <li class="experience__item" data-aos="fade-right" data-aos-duration="2000">
+            <li class="experience__item" data-aos="fade-right" data-aos-duration="1000">
               <strong class="experience__label">01</strong>
               <h3 class="experience__subtitle experience__subtitle__container">
                 <span class="experience__subtitle--accent-primary">GoIT</span>, Fullstack Developer
@@ -137,12 +142,13 @@
             <li
               class="experience__item"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-delay="300"
             >
               <strong class="experience__label">02</strong>
               <h3 class="experience__subtitle">
-                <span class="experience__subtitle--accent-primary">Freelace</span>, Frontend Trainee
+                <span class="experience__subtitle--accent-primary">Freelance</span>, Frontend
+                Trainee
               </h3>
               <p class="paragraph-16">
                 Building websites from scratch, development of the website structure and the design
@@ -152,7 +158,7 @@
             <li
               class="experience__item"
               data-aos="fade-right"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-delay="600"
             >
               <strong class="experience__label">03</strong>
@@ -177,7 +183,7 @@
             metaphysical, and experience with the universe. I try to grasp these things with my
             values: authenticity, creativity, & professionalism.
           </p>
-          <button type="button" class="more-btn about-me__btn" btn-more-about>
+          <button id="about-me-btn" type="button" class="more-btn about-me__btn" btn-more-about>
             <a href="#more-about">More about me</a>
           </button>
         </div>
@@ -212,18 +218,26 @@
             <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
               The Master's degree in Cybernetics (1999)<br />
               Specialization: Applied Mathematics<br />
-              T.Shevchenko Kyiv National Univercity, Faculty of Cybernetics, Kyiv, Ukraine
+              T.Shevchenko Kyiv National University, Faculty of Cybernetics, Kyiv, Ukraine
+            </p>
+          </div>
+          <div class="more-about__inner">
+            <h3 class="more-about__subtitle"></h3>
+            <p class="paragraph-18 paragraph-18--on-light more-about__paragraph">
+              Certificate of Fullstack Developer's courses (2022)<br />
+              Specialization: Frontend/Backend Developer<br />
+              GoIT online school, Kyiv, Ukraine
             </p>
           </div>
 
           <button type="button" class="more-btn more-about__btn" btn-close-more-about>
-            Hide about me
+            <a href="#skillset">Hide about me</a>
           </button>
         </div>
       </section>
-      <section class="section">
+      <section id="skillset" class="section">
         <div class="container">
-          <h2 class="heading-32">More about me</h2>
+          <h2 class="heading-32">Skillset</h2>
           <p class="pargraph-18">
             With skills in over 4 different fields of design, I am the perfect person to hire when
             it comes to a full fledged project. Whatever your needs are, I can pretty much take on

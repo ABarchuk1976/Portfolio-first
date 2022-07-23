@@ -107,7 +107,7 @@ body {
 }
 
 .heading-24--accent-secondary {
-  color: #e65221;
+  color: #ff6b0a;
 }
 
 .heading-32 {
@@ -186,7 +186,7 @@ body {
 }
 
 .more-btn:hover, .more-btn:focus {
-  background-color: #5221e6;
+  background-color: #25c2a0;
   padding: 0.5rem 1rem;
   border-bottom: 1px solid transparent;
   color: #ffffff;
@@ -297,7 +297,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #e65221;
+  background-color: #ff6b0a;
   border: none;
   margin: 0 5px;
   -ms-flex-negative: 0;
@@ -432,21 +432,21 @@ body {
 
 .menu__link:hover, .menu__link:focus {
   color: #ffffff;
-  background-color: #e65221;
+  background-color: #ff6b0a;
 }
 
 .menu__link--accent {
   width: 100%;
   font-weight: 700;
   color: #ffffff;
-  background-color: #5221e6;
+  background-color: #25c2a0;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__link--accent:hover, .menu__link--accent:focus {
   color: #ffffff;
-  background-color: #2a0b85;
+  background-color: #1a8870;
 }
 
 .sticky-menu {
@@ -471,7 +471,7 @@ body {
   height: 3rem;
   border-radius: 50%;
   border: none;
-  background-color: #5221e6;
+  background-color: #25c2a0;
   color: #ffffff;
 }
 
@@ -713,11 +713,11 @@ body {
 }
 
 .experience__subtitle--accent-primary {
-  color: #5221e6;
+  color: #25c2a0;
 }
 
 .experience__subtitle--accent-secondary {
-  color: #e65221;
+  color: #ff6b0a;
 }
 
 @media screen and (min-width: 768px) {
@@ -819,7 +819,7 @@ body {
 
 .more-about__section {
   display: none;
-  background-color: #fbe4ff;
+  background-color: #e4f0ff;
 }
 
 .more-about__section.is-open {
@@ -844,6 +844,12 @@ body {
         -ms-flex-align: stretch;
             align-items: stretch;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .more-about__inner + .more-about__inner .more-about__paragraph {
+    padding-top: 1rem;
   }
 }
 
@@ -886,6 +892,7 @@ body {
     padding-right: 1.5rem;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    padding-top: 1rem;
   }
 }
 
