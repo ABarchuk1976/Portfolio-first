@@ -913,4 +913,41 @@ body {
   color: #181823;
   margin-top: 1rem;
 }
+
+@media screen and (max-width: 767px) {
+  .skillset__sidebar {
+    margin-bottom: 3rem;
+  }
+}
+
+.skillset__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 1.5rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skillset__icon:hover, .skillset__icon:focus {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.skillset__title--append,
+.skillset__subtitle--append {
+  margin-bottom: 1.5rem;
+}
+
+.skillset__subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
 /*# sourceMappingURL=main.css.map */

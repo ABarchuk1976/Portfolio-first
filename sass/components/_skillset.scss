@@ -1,0 +1,29 @@
+.skillset__sidebar {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 3rem;
+  }
+}
+
+.skillset__icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 1.5rem;
+  transform: scale(1);
+  transition: transform $transitionDurationPrimary $transitionTimingPrimary;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.4);
+  }
+}
+
+.skillset__title--append,
+.skillset__subtitle--append {
+  margin-bottom: 1.5rem;
+}
+
+.skillset__subtitle {
+  @include font-params($fs: 1.5rem, $lh: 1.5);
+  margin-bottom: 3rem;
+}
