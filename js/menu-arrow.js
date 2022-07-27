@@ -1,7 +1,6 @@
-const trueCallback = function (entries, observer) {
-  entries.forEach(entry => {
-    entry.target.classList.toggle('is-visible');
-  });
+const trueCallback = function (observer) {
+  console.log('сработало');
+  target.classList.toggle('is-visible');
 };
 
 const options = {
