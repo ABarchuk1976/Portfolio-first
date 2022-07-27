@@ -29,9 +29,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="" body>
-    <header class="header">
+    <header class="header is-visible">
       <div class="header__container">
-        <a href="/" class="logo logo_header"
+        <a id="logo" href="/" class="logo logo_header"
           ><span class="logo__decoration">Andrii&nbsp;&nbsp;&nbsp;Barchuk</span>
         </a>
         <button
@@ -65,17 +65,17 @@
           </nav>
         </div>
       </div>
+
+      <button class="menu__btn-arrow" type="button" data-menu-button-arrow>
+        <a href="#logo" class="menu__link-arrow">
+          <svg class="menu__icon-arrow">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </a>
+      </button>
     </header>
 
     <main>
-      <div class="sticky-menu">
-        <button class="sticky-btn" type="button">
-          <svg class="sticky-menu__icon">
-            <use href="./images/icons.svg#icon-menu" class="menu__icon-menu"></use>
-            <use href="./images/icons.svg#icon-close" class="menu__icon-close"></use>
-          </svg>
-        </button>
-      </div>
       <section class="section section__hero">
         <div class="hero__decoration"></div>
         <div class="hero__thumb" data-aos="fade-right" data-aos-duration="1000">
@@ -305,6 +305,7 @@
               </li>
             </ul>
           </div>
+
           <div class="skillset__block">
             <h3 class="skillset__subtitle skillset__subtitle--append skillset__subtitle--accent">
               Softskills
@@ -376,6 +377,7 @@
           </ul>
         </div>
       </section>
+
       <section class="section">
         <div class="container">
           <strong class="overline-16">My projects</strong>
@@ -507,6 +509,7 @@
 
     <script src="./js/more-about.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/menu-arrow.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

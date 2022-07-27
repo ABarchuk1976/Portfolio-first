@@ -37,9 +37,6 @@
 
 .menu {
   @media screen and (max-width: 767px) {
-    // position: absolute;
-    // left: 0;
-    // top: 0;
     background-color: inherit;
     transform: translateY(-100%);
     width: 100%;
@@ -104,4 +101,38 @@
     color: $colorHeading;
     background-color: $bgcAccentPrimaryHover;
   }
+}
+
+.menu__btn-arrow {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 120;
+  width: 3rem;
+  height: 3rem;
+  color: #ffffff;
+  background-color: $bgcBtnArrow;
+  border: none;
+  border-radius: 50%;
+  transition: background-color $transitionDurationPrimary $transitionTimingPrimary;
+
+  &:hover,
+  &:focus {
+    background-color: $bgcBtnArrowHover;
+  }
+}
+
+.menu__icon-arrow {
+  display: block;
+  width: 25px;
+  height: 30px;
+  fill: currentColor;
+}
+
+.header.is-visible .menu__btn-arrow {
+  display: none;
+}
+
+.header .menu__btn-arrow {
+  @include positioning-flex();
 }
