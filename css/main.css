@@ -99,42 +99,6 @@ body {
   color: #181823;
 }
 
-.heading-24 {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.heading-24--accent-secondary {
-  color: #ff6b0a;
-}
-
-.heading-32 {
-  font-size: 2rem;
-  line-height: 1.2;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.heading-32--accent {
-  display: block;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.heading-55 {
-  font-size: 55px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #ffffff;
-}
-
-.label-117 {
-  font-size: 117px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
 .paragraph-16 {
   font-size: 1rem;
   line-height: 1.5;
@@ -157,6 +121,10 @@ body {
   font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+.overline-16__container {
+  margin-bottom: 0.5rem;
 }
 
 .visually-hidden {
@@ -264,10 +232,6 @@ body {
   .container {
     padding: 7.5rem 4.5rem;
   }
-}
-
-.overline-16__container {
-  margin-bottom: 0.5rem;
 }
 
 .logo {
@@ -620,6 +584,11 @@ body {
   .hero__heading {
     font-size: 4.3rem;
   }
+}
+
+.hero__heading--accent {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .experience__title {

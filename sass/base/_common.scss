@@ -3,10 +3,6 @@ body {
   background-color: $bgcPage;
   color: $colorParagraph;
   font-size: $fontSizeBodyPrimary; /* 1.125rem */
-  // padding-top: $heitghHeader360;
-  // @media screen and (min-width: 768px) {
-  //   padding-top: $heitghHeader768Plus;
-  // }
 }
 
 .body-fixed {
@@ -27,42 +23,6 @@ body {
 
 .heading-h2--on-light {
   color: $colorHeadingOnLight;
-}
-
-.heading-24 {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: $fontWeightBold;
-  color: $colorHeading;
-}
-
-.heading-24--accent-secondary {
-  color: $colorAccentSecondary;
-}
-
-.heading-32 {
-  font-size: 2rem;
-  line-height: 1.2;
-  font-weight: $fontWeightBold;
-  color: $colorHeading;
-}
-
-.heading-32--accent {
-  display: block;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.heading-55 {
-  font-size: 55px;
-  font-weight: $fontWeightBold;
-  line-height: 1.2;
-  color: $colorHeading;
-}
-
-.label-117 {
-  font-size: 117px;
-  font-weight: $fontWeightBold;
-  line-height: 1.2;
 }
 
 .paragraph-16 {
@@ -87,4 +47,8 @@ body {
   font-weight: $fontWeightBold;
   line-height: 1.5;
   text-transform: uppercase;
+}
+
+.overline-16__container {
+  margin-bottom: 0.5rem;
 }
