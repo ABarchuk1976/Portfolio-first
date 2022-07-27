@@ -118,14 +118,17 @@
     right: 2rem;
   }
   color: #ffffff;
-  background-color: $bgcBtnArrow;
+  background-color: $colorAccentSecondary;
   border: none;
-  border-radius: 50%;
-  transition: background-color $transitionDurationPrimary $transitionTimingPrimary;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(0);
+  transition: transform $transitionDurationPrimary $transitionTimingPrimary;
 
   &:hover,
   &:focus {
-    background-color: $bgcBtnArrowHover;
+    transform: rotate(-45deg);
   }
 }
 

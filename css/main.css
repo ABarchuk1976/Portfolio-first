@@ -421,11 +421,17 @@ body {
   width: 2rem;
   height: 2rem;
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ff6b0a;
   border: none;
-  border-radius: 50%;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -438,7 +444,8 @@ body {
 }
 
 .menu__btn-arrow:hover, .menu__btn-arrow:focus {
-  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .menu__icon-arrow {
@@ -768,7 +775,7 @@ body {
 
 .more-about__section {
   display: none;
-  background-color: #e4f0ff;
+  background-color: #faf2f2;
 }
 
 .more-about__section.is-open {
