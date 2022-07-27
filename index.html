@@ -339,10 +339,28 @@
       <section class="section">
         <div class="container">
           <strong class="overline-16">My projects</strong>
-          <h2 class="heading-h2"></h2>
+          <h2 class="heading-h2">Work that I’ve done for the past time</h2>
           <ul class="portfolio">
             <li class="portfolio__item">
-              <img src="" alt="" />
+              <picture>
+                <source
+                  srcset="./images/webstudio-img-688.jpeg 1x, ./images/webstudio-img-688@2x.jpeg 2x"
+                  media="screen and (max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/webstudio-img-1120.jpeg    1x,
+                    ./images/webstudio-img-1120@2x.jpeg 2x
+                  "
+                  media="screen and (min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/webstudio-img-716.jpeg 1x, ./images/webstudio-img-716@2x.jpeg 2x"
+                  media="screen and (min-width: 1200px)"
+                />
+                <img src="./images/webstudio-img-716.jpeg" alt="Webstudio project" />
+              </picture>
+
               <h3 class="portfolio__subtitle"></h3>
               <p></p>
             </li>
